@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { useLang } from './LangContext'
 
-// TODO: replace with your real Formspree endpoint (create one free at formspree.io)
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xykrwbgr'
 
 export default function QuickQuote() {
   const { t } = useLang()
