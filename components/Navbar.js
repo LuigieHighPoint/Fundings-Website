@@ -10,6 +10,8 @@ export default function Navbar() {
   const isHome = router.pathname === '/'
   const anchor = (id) => (isHome ? `#${id}` : `/#${id}`)
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [programsOpen, setProgramsOpen] = useState(false)
 
   useEffect(() => {
     function onScroll() {
@@ -19,6 +21,11 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  useEffect(() => {
+    setMenuOpen(false)
+    setProgramsOpen(false)
+  }, [router.asPath])
 
   return (
     <>
@@ -59,6 +66,41 @@ export default function Navbar() {
 
         <div className="nav-right">
           <a href={anchor('get-quote')} className="nav-cta">{t.navCta}</a>
+          <button
+            type="button"
+            className={`nav-burger ${menuOpen ? 'open' : ''}`}
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
+
+        {/* Mobile menu */}
+        <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+          <div className={`mobile-menu-group ${programsOpen ? 'open' : ''}`}>
+            <button
+              type="button"
+              className="mobile-menu-lbl mobile-menu-toggle"
+              aria-expanded={programsOpen}
+              onClick={() => setProgramsOpen((v) => !v)}
+            >
+              {t.navPrograms} <span className="mobile-menu-caret">▾</span>
+            </button>
+            <div className="mobile-menu-sublist">
+              {t.programs.map((p, i) => (
+                <Link key={i} href={`/loans/${p.slug}`}>{p.title}</Link>
+              ))}
+            </div>
+          </div>
+          <Link href="/calculator">{t.navCalculator}</Link>
+          <a href={anchor('how-it-works')}>{t.navHow}</a>
+          <a href={anchor('why-us')}>{t.navWhy}</a>
+          <a href={anchor('faq')}>{t.navFaq}</a>
+          <a href={anchor('get-quote')} className="btn-primary mobile-menu-cta">{t.navCta}</a>
         </div>
       </nav>
     </>

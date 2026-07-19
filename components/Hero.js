@@ -3,6 +3,41 @@ import { useLang } from './LangContext'
 
 const CYCLE_MS = 3500
 const FADE_MS = 400
+const COUNT_MS = 2800
+
+// Animates the leading number in a stat string (e.g. "14 Days" -> counts
+// 0..14, keeping the " Days" suffix static) from 0 up to its real value
+// on mount, using an ease-out curve so it settles smoothly rather than
+// ticking at a constant rate.
+function CountUp({ value, delay = 0 }) {
+  const match = value.match(/^(\d+)(.*)$/)
+  const target = match ? parseInt(match[1], 10) : null
+  const suffix = match ? match[2] : ''
+  const [display, setDisplay] = useState(target === null ? value : 0)
+
+  useEffect(() => {
+    if (target === null) return
+    setDisplay(0)
+    let raf
+    let start = null
+    const timeout = setTimeout(() => {
+      function step(ts) {
+        if (start === null) start = ts
+        const progress = Math.min((ts - start) / COUNT_MS, 1)
+        const eased = 1 - Math.pow(1 - progress, 3)
+        setDisplay(Math.round(eased * target))
+        if (progress < 1) raf = requestAnimationFrame(step)
+      }
+      raf = requestAnimationFrame(step)
+    }, delay)
+    return () => {
+      clearTimeout(timeout)
+      cancelAnimationFrame(raf)
+    }
+  }, [target, delay])
+
+  return <>{display}{suffix}</>
+}
 
 export default function Hero() {
   const { t } = useLang()
@@ -44,7 +79,7 @@ export default function Hero() {
         <div className="hero-stats reveal" style={{ transitionDelay: '320ms' }}>
           {t.heroStats.map(([value, label], i) => (
             <div className="hero-stat" key={i}>
-              <b>{value}</b>
+              <b><CountUp value={value} delay={i * 120} /></b>
               <span>{label}</span>
             </div>
           ))}

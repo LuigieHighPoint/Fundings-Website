@@ -80,14 +80,18 @@ export default function QuickQuote() {
                     </select>
                   </div>
                 </div>
-                <div className="form-row">
+                <div className="form-row form-row-3">
                   <div className="field">
                     <label>{t.labelAddress}</label>
                     <input type="text" name="property_address" placeholder={t.placeholderAddress} required autoComplete="off" />
                   </div>
                   <div className="field">
-                    <label>{t.labelLoanAmount}</label>
-                    <input type="text" name="loan_amount" placeholder={t.placeholderLoanAmount} required />
+                    <label>{t.labelCity}</label>
+                    <input type="text" name="city" placeholder={t.placeholderCity} required autoComplete="off" />
+                  </div>
+                  <div className="field">
+                    <label>{t.labelZip}</label>
+                    <input type="text" name="zip_code" placeholder={t.placeholderZip} required autoComplete="off" inputMode="numeric" />
                   </div>
                 </div>
                 <div className="field">
