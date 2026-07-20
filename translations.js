@@ -36,7 +36,7 @@ export const translations = {
     h1Line1: "Built by investors,",
     h1Line2: "for ",
     h1Word: "investors.",
-    lead: "High Point Fundings provides asset-based financing for real estate investors — fix & flip, new construction, bridge, refinance, DSCR rental, multifamily, and portfolio loans. Transparent terms, in-house underwriting, and closings in as little as 7 days.",
+    lead: "High Point Fundings provides asset-based financing for real estate investors — fix & flip, new construction, bridge, refinance, DSCR rental, multifamily, and portfolio loans. Transparent terms, in-house underwriting, and closings in as little as 3 days.",
     btn1: "Get my rate quote",
     btn2: "See how it works",
     heroStats: [["14 Days", "Average closing"], ["47", "States available"], ["7", "Loan programs"]],
@@ -83,7 +83,7 @@ export const translations = {
           "1–4 unit residential properties",
           "Pricing discounts for repeat borrowers",
         ],
-        values: ["$100,000", "8.99% – 10.99%", "1.5 – 2.5", "90%", "75%", "6, 12, 18 mo", "7–14 days"],
+        values: ["$125,000", "8.99% – 10.99%", "1.0 – 3.0", "93%", "75%", "12, 18, 24 mo", "3–5 days"],
       },
       {
         slug: "new-construction",
@@ -99,7 +99,7 @@ export const translations = {
           "1–4 unit residential properties",
           "Use fix & flip experience to qualify",
         ],
-        values: ["$150,000", "9.49% – 11.49%", "1.5 – 2.5", "85%", "70%", "12, 18, 24 mo", "14–21 days"],
+        values: ["$200,000", "9.99% – 11.99%", "2.0 – 4.0", "90%", "70%", "12, 18, 24 mo", "7–10 days"],
       },
       {
         slug: "bridge",
@@ -108,14 +108,14 @@ export const translations = {
         tagline: "Fast, flexible short-term capital to move on a deal before financing is finalized.",
         description: "When you need to close quickly or buy time to finalize your investment strategy, our Bridge loans give you a streamlined, proactive way to acquire property without waiting on permanent financing.",
         features: [
-          "Close in as little as 5–10 days",
+          "Close in as little as 3–5 days",
           "No prepayment penalty",
           "Cash-out options available",
           "Single loans and portfolio blanket loans",
           "6, 12, or 18-month terms",
           "Non-owner occupied 1–4 unit properties",
         ],
-        values: ["$100,000", "8.49% – 10.49%", "1.5 – 2.5", "–", "80%", "6, 12, 18 mo", "5–10 days"],
+        values: ["$100,000", "8.99% – 10.99%", "1.0 – 3.0", "80%", "80%", "6, 12, 18 mo", "3–5 days"],
       },
       {
         slug: "refinance",
@@ -131,7 +131,7 @@ export const translations = {
           "1–4 unit residential properties",
           "No W-2s or paystubs required",
         ],
-        values: ["$100,000", "7.99% – 9.99%", "1.0 – 2.0", "–", "75%", "12, 24, 36 mo", "10–14 days"],
+        values: ["$100,000", "8.99% – 10.99%", "1.0 – 3.0", "–", "80%", "12, 24, 36 mo", "3–5 days"],
       },
       {
         slug: "dscr-rental",
@@ -147,7 +147,7 @@ export const translations = {
           "Zero point options available",
           "Finance multiple properties under one loan",
         ],
-        values: ["$75,000", "6.25% – 7.75%", "1.0 – 2.0", "–", "80%", "30-year fixed", "14–21 days"],
+        values: ["$100,000", "5.75% – 7.25%", "0 – 4.0", "–", "85%", "30-year fixed", "14–21 days"],
       },
       {
         slug: "multifamily",
@@ -196,7 +196,7 @@ export const translations = {
       { title: "Submit your deal", desc: "Tell us about the property, the deal, and your funding goal. Takes under 2 minutes, no obligation." },
       { title: "Review your terms", desc: "We show you real rates, terms, and costs up front — no hidden fees, no last-minute surprises." },
       { title: "Upload your docs", desc: "Send your purchase contract, scope of work, and basic borrower info. Our team underwrites fast." },
-      { title: "Close & get funded", desc: "Sign your closing docs and we wire your funds — often within 7–14 business days." },
+      { title: "Close & get funded", desc: "Sign your closing docs and we wire your funds — often within 3–14 business days." },
     ],
 
     compareLabel: "Side by side",
@@ -204,7 +204,7 @@ export const translations = {
     compareSub: "See why investors choose private capital over slow-moving conventional financing.",
     compareRows: [
       ["Approval basis", "Asset & deal-based", "Personal income & credit heavy"],
-      ["Time to close", "7–14 days", "45–60+ days"],
+      ["Time to close", "3–14 days", "45–60+ days"],
       ["Draw process", "Fast, in-house review", "Slow, third-party inspections"],
       ["Prepayment penalty", "None on most programs", "Often required"],
       ["Property condition", "Distressed / as-is OK", "Must meet strict standards"],
@@ -215,7 +215,7 @@ export const translations = {
     whyTitle: "Built for how investors actually work",
     whySub: "High Point Fundings has helped investors and builders close deals quickly, confidently, and on fair terms.",
     benefits: [
-      { icon: "⚡", title: "Fast closings", desc: "In-house underwriting means fewer bottlenecks. Most deals close in as little as 7 days once docs are in." },
+      { icon: "⚡", title: "Fast closings", desc: "In-house underwriting means fewer bottlenecks. Most deals close in as little as 3 days once docs are in." },
       { icon: "💯", title: "Transparent pricing", desc: "Rates and terms are shown up front. No hidden fees, no last-minute surprises at the closing table." },
       { icon: "🏗️", title: "Asset-based underwriting", desc: "We lend on the deal and the property — not just your credit score or two years of tax returns." },
       { icon: "📞", title: "Dedicated loan officer", desc: "One point of contact from application through closing — no call centers, no getting bounced around." },
@@ -233,8 +233,8 @@ export const translations = {
     faqSub: "Still have questions? Call us directly at <strong>(972) 802-7521</strong> — a real lender picks up.",
     faqs: [
       { q: "What loan programs do you offer?", a: "Fix & flip, new construction, bridge, refinance, DSCR rental, multifamily, and portfolio loans — seven programs built for real estate investors and builders at every stage of a deal." },
-      { q: "How much can I borrow?", a: "Up to 90% of cost on fix & flip, up to 85% on new construction, and up to 80% on multifamily acquisitions — plus up to 80% LTV on bridge and DSCR rental loans, and up to 75% LTV on refinance and portfolio loans. Exact leverage depends on the deal and your experience." },
-      { q: "How fast can you actually close?", a: "Bridge loans can close in as little as 5–10 days. Most fix & flip and refinance loans close in 7–14 business days once your documents are submitted. Construction, DSCR rental, multifamily, and portfolio loans typically take 14–21 days." },
+      { q: "How much can I borrow?", a: "Up to 93% of cost on fix & flip, up to 90% on new construction, and up to 80% on multifamily acquisitions — plus up to 80% LTV on bridge, refinance, and DSCR rental loans, and up to 75% LTV on portfolio loans. Exact leverage depends on the deal and your experience." },
+      { q: "How fast can you actually close?", a: "Bridge, fix & flip, and refinance loans can close in as little as 3–5 business days once your documents are submitted. New construction typically closes in 7–10 days. DSCR rental, multifamily, and portfolio loans typically take 14–21 days." },
       { q: "Do I need to show personal income?", a: "Not for DSCR loans — those qualify based on the property's rental cash flow. Other programs weigh the deal and your experience more heavily than pay stubs or tax returns." },
       { q: "What states do you lend in?", a: "We lend nationwide, with the exception of a small handful of states we're still onboarding. Reach out with your property location and we'll confirm coverage right away." },
       { q: "What documents do I need to apply?", a: "A purchase contract or current mortgage statement, a scope of work or budget (for rehab or construction), a rent roll or lease (for DSCR, multifamily, portfolio, or a rental refinance), and basic borrower information." },
@@ -296,7 +296,7 @@ export const translations = {
     h1Line1: "Creado por inversionistas,",
     h1Line2: "para ",
     h1Word: "inversionistas.",
-    lead: "High Point Fundings ofrece financiamiento basado en el activo para inversionistas inmobiliarios — fix & flip, nueva construcción, bridge, refinanciamiento, DSCR para renta, multifamiliar y portafolio. Términos transparentes, suscripción interna y cierres en tan solo 7 días.",
+    lead: "High Point Fundings ofrece financiamiento basado en el activo para inversionistas inmobiliarios — fix & flip, nueva construcción, bridge, refinanciamiento, DSCR para renta, multifamiliar y portafolio. Términos transparentes, suscripción interna y cierres en tan solo 3 días.",
     btn1: "Obtener mi cotización",
     btn2: "Ver cómo funciona",
     heroStats: [["14 Días", "Cierre promedio"], ["47", "Estados disponibles"], ["7", "Programas de préstamo"]],
@@ -343,7 +343,7 @@ export const translations = {
           "Propiedades residenciales de 1–4 unidades",
           "Descuentos de precio para prestatarios recurrentes",
         ],
-        values: ["$100,000", "8.99% – 10.99%", "1.5 – 2.5", "90%", "75%", "6, 12, 18 meses", "7–14 días"],
+        values: ["$125,000", "8.99% – 10.99%", "1.0 – 3.0", "93%", "75%", "12, 18, 24 meses", "3–5 días"],
       },
       {
         slug: "new-construction",
@@ -359,7 +359,7 @@ export const translations = {
           "Propiedades residenciales de 1–4 unidades",
           "Usa tu experiencia en fix & flip para calificar",
         ],
-        values: ["$150,000", "9.49% – 11.49%", "1.5 – 2.5", "85%", "70%", "12, 18, 24 meses", "14–21 días"],
+        values: ["$200,000", "9.99% – 11.99%", "2.0 – 4.0", "90%", "70%", "12, 18, 24 meses", "7–10 días"],
       },
       {
         slug: "bridge",
@@ -368,14 +368,14 @@ export const translations = {
         tagline: "Capital rápido y flexible a corto plazo para avanzar en un trato antes del financiamiento permanente.",
         description: "Cuando necesitas cerrar rápido o ganar tiempo para finalizar tu estrategia de inversión, nuestros préstamos Bridge te dan una forma ágil de adquirir propiedades sin esperar el financiamiento permanente.",
         features: [
-          "Cierra en tan solo 5–10 días",
+          "Cierra en tan solo 3–5 días",
           "Sin penalidad por pago anticipado",
           "Opciones de retiro de efectivo disponibles",
           "Préstamos individuales y de portafolio",
           "Plazos de 6, 12 o 18 meses",
           "Propiedades no ocupadas por el dueño de 1–4 unidades",
         ],
-        values: ["$100,000", "8.49% – 10.49%", "1.5 – 2.5", "–", "80%", "6, 12, 18 meses", "5–10 días"],
+        values: ["$100,000", "8.99% – 10.99%", "1.0 – 3.0", "80%", "80%", "6, 12, 18 meses", "3–5 días"],
       },
       {
         slug: "refinance",
@@ -391,7 +391,7 @@ export const translations = {
           "Propiedades residenciales de 1–4 unidades",
           "Sin W-2s ni recibos de pago requeridos",
         ],
-        values: ["$100,000", "7.99% – 9.99%", "1.0 – 2.0", "–", "75%", "12, 24, 36 meses", "10–14 días"],
+        values: ["$100,000", "8.99% – 10.99%", "1.0 – 3.0", "–", "80%", "12, 24, 36 meses", "3–5 días"],
       },
       {
         slug: "dscr-rental",
@@ -407,7 +407,7 @@ export const translations = {
           "Opciones sin puntos disponibles",
           "Financia múltiples propiedades bajo un solo préstamo",
         ],
-        values: ["$75,000", "6.25% – 7.75%", "1.0 – 2.0", "–", "80%", "30 años fijo", "14–21 días"],
+        values: ["$100,000", "5.75% – 7.25%", "0 – 4.0", "–", "85%", "30 años fijo", "14–21 días"],
       },
       {
         slug: "multifamily",
@@ -456,7 +456,7 @@ export const translations = {
       { title: "Envía tu proyecto", desc: "Cuéntanos sobre la propiedad, el trato y tu meta de financiamiento. Toma menos de 2 minutos, sin compromiso." },
       { title: "Revisa tus términos", desc: "Te mostramos tasas, plazos y costos reales desde el inicio — sin tarifas ocultas ni sorpresas." },
       { title: "Sube tus documentos", desc: "Envía tu contrato de compra, alcance de trabajo e información básica. Suscribimos rápido." },
-      { title: "Cierra y recibe fondos", desc: "Firma tus documentos de cierre y transferimos los fondos — a menudo en 7–14 días hábiles." },
+      { title: "Cierra y recibe fondos", desc: "Firma tus documentos de cierre y transferimos los fondos — a menudo en 3–14 días hábiles." },
     ],
 
     compareLabel: "Comparación",
@@ -464,7 +464,7 @@ export const translations = {
     compareSub: "Descubre por qué los inversionistas eligen capital privado sobre el financiamiento convencional lento.",
     compareRows: [
       ["Base de aprobación", "Basada en el activo y el trato", "Fuertemente en ingreso y crédito"],
-      ["Tiempo de cierre", "7–14 días", "45–60+ días"],
+      ["Tiempo de cierre", "3–14 días", "45–60+ días"],
       ["Proceso de desembolso", "Rápido, revisión interna", "Lento, inspecciones externas"],
       ["Penalidad por pago anticipado", "Ninguna en la mayoría de programas", "Frecuentemente requerida"],
       ["Condición de la propiedad", "Deteriorada / tal cual está bien", "Debe cumplir estándares estrictos"],
@@ -475,7 +475,7 @@ export const translations = {
     whyTitle: "Diseñado para cómo trabajan los inversionistas",
     whySub: "High Point Fundings ha ayudado a inversionistas y constructores a cerrar tratos rápida, segura y justamente.",
     benefits: [
-      { icon: "⚡", title: "Cierres rápidos", desc: "La suscripción interna significa menos obstáculos. La mayoría de los tratos cierran en tan solo 7 días." },
+      { icon: "⚡", title: "Cierres rápidos", desc: "La suscripción interna significa menos obstáculos. La mayoría de los tratos cierran en tan solo 3 días." },
       { icon: "💯", title: "Precios transparentes", desc: "Tasas y términos se muestran desde el inicio. Sin tarifas ocultas ni sorpresas en el cierre." },
       { icon: "🏗️", title: "Suscripción basada en el activo", desc: "Prestamos según el trato y la propiedad — no solo tu puntaje de crédito o dos años de impuestos." },
       { icon: "📞", title: "Oficial de préstamos dedicado", desc: "Un solo punto de contacto desde la solicitud hasta el cierre — sin centros de llamadas." },
@@ -493,8 +493,8 @@ export const translations = {
     faqSub: "¿Tienes más preguntas? Llama directamente al <strong>(972) 802-7521</strong> — un prestamista real contesta.",
     faqs: [
       { q: "¿Qué programas de préstamo ofrecen?", a: "Fix & flip, nueva construcción, bridge, refinanciamiento, DSCR para renta, multifamiliar y portafolio — siete programas diseñados para inversionistas y constructores en cada etapa de su proyecto." },
-      { q: "¿Cuánto puedo pedir prestado?", a: "Hasta 90% del costo en fix & flip, hasta 85% en nueva construcción y hasta 80% en adquisiciones multifamiliares — además de hasta 80% LTV en bridge y DSCR para renta, y hasta 75% LTV en refinanciamiento y portafolio. El apalancamiento exacto depende del trato y tu experiencia." },
-      { q: "¿Qué tan rápido pueden cerrar realmente?", a: "Los préstamos bridge pueden cerrar en tan solo 5–10 días. La mayoría de los préstamos fix & flip y de refinanciamiento cierran en 7–14 días hábiles una vez enviados los documentos. Construcción, DSCR para renta, multifamiliar y portafolio suelen tomar 14–21 días." },
+      { q: "¿Cuánto puedo pedir prestado?", a: "Hasta 93% del costo en fix & flip, hasta 90% en nueva construcción y hasta 80% en adquisiciones multifamiliares — además de hasta 80% LTV en bridge, refinanciamiento y DSCR para renta, y hasta 75% LTV en portafolio. El apalancamiento exacto depende del trato y tu experiencia." },
+      { q: "¿Qué tan rápido pueden cerrar realmente?", a: "Los préstamos bridge, fix & flip y de refinanciamiento pueden cerrar en tan solo 3–5 días hábiles una vez enviados los documentos. Nueva construcción cierra típicamente en 7–10 días. DSCR para renta, multifamiliar y portafolio suelen tomar 14–21 días." },
       { q: "¿Necesito mostrar ingreso personal?", a: "No para préstamos DSCR — esos califican según el flujo de renta de la propiedad. Otros programas dan más peso al trato y tu experiencia." },
       { q: "¿En qué estados prestan?", a: "Prestamos a nivel nacional, con excepción de un pequeño grupo de estados que aún estamos incorporando. Contáctanos con la ubicación de tu propiedad y confirmamos cobertura." },
       { q: "¿Qué documentos necesito para aplicar?", a: "Un contrato de compra o estado de cuenta hipotecario actual, alcance de trabajo o presupuesto (para remodelación o construcción), contrato de renta (para DSCR, multifamiliar, portafolio o refinanciamiento de renta), e información básica del prestatario." },
