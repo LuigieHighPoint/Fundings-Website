@@ -147,7 +147,7 @@ export const translations = {
           "Zero point options available",
           "Finance multiple properties under one loan",
         ],
-        values: ["$100,000", "5.75% – 7.25%", "0 – 4.0", "–", "85%", "30-year fixed", "14–21 days"],
+        values: ["$100,000", "5.75% – 7.25%", "0 – 4.0 (Discount Points)", "–", "85%", "30-year fixed", "14–21 days"],
       },
       {
         slug: "multifamily",
@@ -407,7 +407,7 @@ export const translations = {
           "Opciones sin puntos disponibles",
           "Financia múltiples propiedades bajo un solo préstamo",
         ],
-        values: ["$100,000", "5.75% – 7.25%", "0 – 4.0", "–", "85%", "30 años fijo", "14–21 días"],
+        values: ["$100,000", "5.75% – 7.25%", "0 – 4.0 (Puntos de Descuento)", "–", "85%", "30 años fijo", "14–21 días"],
       },
       {
         slug: "multifamily",
