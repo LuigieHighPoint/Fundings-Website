@@ -222,7 +222,7 @@ nav.nav-scrolled { background: rgba(255,255,255,0.98); box-shadow: 0 8px 24px rg
 .rate-card {
   position: relative; background: var(--white); border-radius: 20px;
   box-shadow: var(--shadow-lg); border: 1px solid var(--border);
-  padding: 1.75rem; max-width: 340px; min-height: 320px; margin: 0 auto;
+  padding: 1.75rem; width: 340px; max-width: 100%; min-height: 320px; margin: 0 auto;
   animation: cardFloat 6s ease-in-out infinite;
 }
 @keyframes cardFloat {
@@ -574,27 +574,6 @@ footer { background: var(--navy); padding: 4.5rem 5vw 2.5rem; }
 .foot-logo .nl2 { font-size: 0.88rem; font-weight: 600; letter-spacing: 0.22em; color: var(--blue2); margin-top: 1px; }
 .foot-tagline { font-size: 0.85rem; color: rgba(255,255,255,0.45); font-weight: 300; margin-top: 0.75rem; margin-bottom: 2rem; }
 
-.foot-signup-ttl { font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 1rem; }
-.foot-signup-accent { color: var(--blue2); }
-.foot-signup-form { display: flex; flex-direction: column; gap: 0.9rem; max-width: 340px; }
-.foot-signup-form input[type="email"] {
-  padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.06); color: var(--white); font-family: 'Poppins', sans-serif; font-size: 0.88rem; outline: none;
-  transition: border-color 0.2s;
-}
-.foot-signup-form input[type="email"]::placeholder { color: rgba(255,255,255,0.35); }
-.foot-signup-form input[type="email"]:focus { border-color: var(--blue2); }
-.foot-consent { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.76rem; color: rgba(255,255,255,0.5); line-height: 1.5; cursor: pointer; }
-.foot-consent input { margin-top: 3px; accent-color: var(--blue2); flex-shrink: 0; }
-.foot-signup-btn {
-  align-self: flex-start; padding: 0.7rem 1.75rem; border-radius: 999px; border: none;
-  background: var(--blue); color: var(--white); font-family: 'Poppins', sans-serif; font-size: 0.85rem; font-weight: 600;
-  cursor: pointer; transition: background 0.2s;
-}
-.foot-signup-btn:hover { background: var(--blue2); }
-.foot-signup-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-.foot-signup-success { font-size: 0.85rem; color: var(--blue2); max-width: 320px; line-height: 1.6; }
-
 .foot-col h5 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue2); margin-bottom: 1.25rem; }
 .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
 .foot-col a { font-size: 0.88rem; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
@@ -691,8 +670,8 @@ footer { background: var(--navy); padding: 4.5rem 5vw 2.5rem; }
   .hero h1 { font-size: 2.3rem; line-height: 1.15; }
   .hero-badge { font-size: 0.68rem; padding: 0.5rem 0.9rem; }
   .hero-lead { font-size: 0.92rem; }
-  .hero-btns { flex-direction: column; gap: 0.75rem; width: 100%; }
-  .hero-btns a { width: 100%; text-align: center; justify-content: center; padding: 0.8rem 1.5rem; font-size: 0.85rem; }
+  .hero-btns { flex-direction: row; gap: 0.6rem; width: 100%; flex-wrap: nowrap; }
+  .hero-btns a { flex: 1; text-align: center; justify-content: center; padding: 0.75rem 0.5rem; font-size: 0.78rem; white-space: nowrap; }
   .form-head { padding: 1.5rem; }
   .form-head h3 { font-size: 1.3rem; }
   .form-body { padding: 1.5rem; }
@@ -734,9 +713,6 @@ footer { background: var(--navy); padding: 4.5rem 5vw 2.5rem; }
 
   footer { padding: 3rem 5vw 2rem; }
   .foot-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
-  .foot-signup-form { max-width: none; align-items: center; }
-  .foot-consent { text-align: left; }
-  .foot-signup-btn { align-self: center; }
   .foot-bot { flex-direction: column; gap: 0.5rem; text-align: center; }
 
   .cta-sec .sec-ttl { white-space: normal !important; font-size: 1.6rem !important; }

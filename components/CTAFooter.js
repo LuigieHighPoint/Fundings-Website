@@ -1,10 +1,6 @@
-import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useLang } from './LangContext'
-
-// TODO: replace with your real Formspree endpoint (create one free at formspree.io)
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'
 
 export function CTA() {
   const { t } = useLang()
@@ -26,24 +22,6 @@ export function Footer() {
   const isHome = router.pathname === '/'
   const anchor = (id) => (isHome ? `#${id}` : `/#${id}`)
 
-  const [submitted, setSubmitted] = useState(false)
-  const [loading, setLoading] = useState(false)
-
-  async function handleSubmit(e) {
-    e.preventDefault()
-    setLoading(true)
-    try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
-        method: 'POST',
-        body: new FormData(e.target),
-        headers: { Accept: 'application/json' },
-      })
-      if (res.ok) setSubmitted(true)
-    } finally {
-      setLoading(false)
-    }
-  }
-
   return (
     <footer>
       <div className="foot-grid">
@@ -53,22 +31,6 @@ export function Footer() {
             <span className="nl2">FUNDINGS</span>
           </div>
           <p className="foot-tagline">{t.footTagline}</p>
-
-          <div className="foot-signup">
-            <h4 className="foot-signup-ttl">{t.footSignupHeadline1} <span className="foot-signup-accent">{t.footSignupHeadline2}</span></h4>
-            {submitted ? (
-              <p className="foot-signup-success">{t.footSuccessMsg}</p>
-            ) : (
-              <form onSubmit={handleSubmit} className="foot-signup-form">
-                <input type="email" name="email" placeholder={t.footEmailPlaceholder} required />
-                <label className="foot-consent">
-                  <input type="checkbox" name="consent" required />
-                  <span>{t.footConsentLabel}</span>
-                </label>
-                <button type="submit" className="foot-signup-btn" disabled={loading}>{t.footSubmitBtn}</button>
-              </form>
-            )}
-          </div>
         </div>
 
         <div className="foot-col">
@@ -95,7 +57,7 @@ export function Footer() {
           <h5>{t.footColContact}</h5>
           <ul>
             <li><a href="tel:+19728027521">(972) 802-7521</a></li>
-            <li><a href="mailto:loans@highpointfundings.com">loans@highpointfundings.com</a></li>
+            <li><a href="mailto:luigie@highpointfundings.com">luigie@highpointfundings.com</a></li>
             <li><a href={anchor('get-quote')}>{t.navCta}</a></li>
           </ul>
         </div>
