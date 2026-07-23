@@ -67,7 +67,7 @@ function parseProgram(program) {
   const ltvCap = parsePercentCap(ltvStr)
   const isAmortizing = AMORTIZING_SLUGS.includes(program.slug)
   const term = parseTerm(termStr, isAmortizing)
-  const maxLoan = minLoan >= 100000 ? 5000000 : 2000000
+  const maxLoan = minLoan >= 75000 ? 5000000 : 2000000
   return { minLoan, maxLoan, rateMin, rateMax, pointsMin, pointsMax, ltcCap, ltvCap, term }
 }
 
